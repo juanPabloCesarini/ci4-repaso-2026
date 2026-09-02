@@ -10,7 +10,11 @@ public function index():string{
     
 }
 
-public function show():string{
-    return "<h1>Detalle del producto";
+public function show($id):string{
+    return "<h1>Detalle del producto: $id</h1>";
+}
+
+public function cat($categoria, $id):string{
+    return "<h1>Producto en la categoría: $categoria, ID: $id</h1>";
 }
 }
